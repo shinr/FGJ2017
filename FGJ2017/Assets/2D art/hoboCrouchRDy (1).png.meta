@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 5cf569c94a9845742aa8d1da244df477
-timeCreated: 1485011891
+guid: eccec29d2b5aa1143a6a0012617ee9ef
+timeCreated: 1485011907
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: hoboRun clone_0
-    21300002: hoboRun clone_1
-    21300004: hoboRun clone_2
-    21300006: hoboRun clone_3
+    21300000: hoboCrouchRDy (1)_0
+    21300002: hoboCrouchRDy (1)_1
+    21300004: hoboCrouchRDy (1)_2
+    21300006: hoboCrouchRDy (1)_3
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -70,67 +70,43 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: iPhone
-    maxTextureSize: 2048
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-  - buildTarget: Android
-    maxTextureSize: 2048
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-  - buildTarget: WebGL
-    maxTextureSize: 2048
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hoboRun clone_0
+      name: hoboCrouchRDy (1)_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 280
-        width: 215
-        height: 280
+        y: 207
+        width: 175
+        height: 183
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: hoboRun clone_1
+      name: hoboCrouchRDy (1)_1
       rect:
         serializedVersion: 2
-        x: 215
-        y: 280
-        width: 215
-        height: 280
+        x: 175
+        y: 204
+        width: 175
+        height: 186
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: hoboRun clone_2
+      name: hoboCrouchRDy (1)_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 215
-        height: 280
+        y: 9
+        width: 175
+        height: 186
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
