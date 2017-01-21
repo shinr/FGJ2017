@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GeneratorBehaviour : MonoBehaviour {
-    public GameObject obstacle;
+    public GameObject groundObstacle;
+    public GameObject airObstacle;
 
-    float spawnTimer = 1.0f;
+    float spawnTimer = 10.0f;
 
     enum Levels
     {
@@ -20,7 +21,19 @@ public class GeneratorBehaviour : MonoBehaviour {
 	}
 
     void SpawnNewObstacle() {
-        Instantiate(obstacle, this.transform.position, Quaternion.identity);
+        switch (currentLevel)
+        {
+            case Levels.Ground:
+                Instantiate(groundObstacle, this.transform.position, Quaternion.identity);
+                break;
+            case Levels.Air:
+                Instantiate(airObstacle, this.transform.position + (Vector3.up * 1.5f), Quaternion.identity);
+                break;
+        }
+        
+        if (Random.value > 0.5f) {
+            currentLevel = currentLevel == Levels.Ground ? Levels.Air : Levels.Ground;
+        } 
         Invoke("SpawnNewObstacle", spawnTimer);
     }
 	
