@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 5cf569c94a9845742aa8d1da244df477
-timeCreated: 1485011891
+guid: 624de9908f2d5a841a9acebd0397dc0d
+timeCreated: 1485013936
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: hoboRun clone_0
-    21300002: hoboRun clone_1
-    21300004: hoboRun clone_2
-    21300006: hoboRun clone_3
+    21300000: flyingCat_0
+    21300002: flyingCat_1
+    21300004: flyingCat_2
+    21300006: flyingCat_3
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -70,69 +70,58 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: iPhone
-    maxTextureSize: 2048
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-  - buildTarget: Android
-    maxTextureSize: 2048
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-  - buildTarget: WebGL
-    maxTextureSize: 2048
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hoboRun clone_0
+      name: flyingCat_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 280
-        width: 215
-        height: 280
+        y: 190
+        width: 195
+        height: 125
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: hoboRun clone_1
+      name: flyingCat_1
       rect:
         serializedVersion: 2
-        x: 215
-        y: 280
-        width: 215
-        height: 280
+        x: 200
+        y: 185
+        width: 190
+        height: 130
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: hoboRun clone_2
+      name: flyingCat_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 215
-        height: 280
+        y: 25
+        width: 190
+        height: 130
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: flyingCat_3
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 25
+        width: 190
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0

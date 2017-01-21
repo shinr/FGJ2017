@@ -1,13 +1,9 @@
 fileFormatVersion: 2
-guid: eccec29d2b5aa1143a6a0012617ee9ef
-timeCreated: 1485011907
+guid: ecf53f3b35e6e1745a131cb3d4629b1a
+timeCreated: 1485013883
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: hoboCrouchRDy (1)_0
-    21300002: hoboCrouchRDy (1)_1
-    21300004: hoboCrouchRDy (1)_2
-    21300006: hoboCrouchRDy (1)_3
+  fileIDToRecycleName: {}
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -38,12 +34,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 4, y: 0, z: 4, w: 18}
   spritePixelsToUnits: 100
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -72,46 +68,7 @@ TextureImporter:
     overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: hoboCrouchRDy (1)_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 207
-        width: 175
-        height: 183
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: hoboCrouchRDy (1)_1
-      rect:
-        serializedVersion: 2
-        x: 175
-        y: 204
-        width: 175
-        height: 186
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: hoboCrouchRDy (1)_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 9
-        width: 175
-        height: 186
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
+    sprites: []
     outline: []
   spritePackingTag: 
   userData: 
