@@ -14,10 +14,21 @@ public class GeneratorBehaviour : MonoBehaviour {
     }
     Levels currentLevel;
 
+    void Enable()
+    {
+        Invoke("SpawnNewObstacle", spawnTimer);
+    }
+
+    void Disable()
+    {
+        CancelInvoke("SpawnNewObstacle");
+    }
+
 	// Use this for initialization
 	void Start () {
         currentLevel = Levels.Ground;
-        Invoke("SpawnNewObstacle", spawnTimer);
+        GameState.startGame += Enable;
+        ObstacleMovement.onDeath += Disable;
 	}
 
     void SpawnNewObstacle() {

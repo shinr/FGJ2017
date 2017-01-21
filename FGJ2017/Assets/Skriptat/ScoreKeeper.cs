@@ -7,7 +7,7 @@ public class ScoreKeeper : MonoBehaviour {
     long score;
 
     Text text;
-
+    
     void ResetScoreKeeper()
     {
         score = 0;
@@ -18,11 +18,13 @@ public class ScoreKeeper : MonoBehaviour {
         text.text = "Score: "+ score.ToString();
         score += 1;
     }
+
     // register events
     void OnEnable()
     {
         text = this.GetComponent<Text>();
         ObstacleMovement.onDeath += ResetScoreKeeper;
+        GameState.startGame += ResetScoreKeeper;
     }
 
 	// Use this for initialization
