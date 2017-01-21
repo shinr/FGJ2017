@@ -9,12 +9,13 @@ public class PlayerMove : MonoBehaviour {
     private Vector3 direction = Vector3.right;
     public GameObject bong;
 
-
+    bool isGrounded = false;
     Animator anim;
 
     void OnCollisionEnter2D(Collision2D coll)
     {
         Debug.Log("Pelaaja kollasi");
+        isGrounded = true;
     }
 
 	// Use this for initialization
@@ -49,12 +50,15 @@ public class PlayerMove : MonoBehaviour {
             
 
         //Jump
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            this.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 350);
+        if(isGrounded) { 
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                isGrounded = false;
+                this.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 350);
+            }
         }
-            
-        
+
+
     }
 	
 	// Update is called once per frame
