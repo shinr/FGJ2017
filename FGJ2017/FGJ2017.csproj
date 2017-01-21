@@ -81,6 +81,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Skriptat\Destroyer.cs" />
     <Compile Include="Assets\Skriptat\GameState.cs" />
     <Compile Include="Assets\Skriptat\GeneratorBehaviour.cs" />
     <Compile Include="Assets\Skriptat\GroundMovement.cs" />
