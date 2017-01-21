@@ -6,9 +6,13 @@ public class ObstacleMovement : MonoBehaviour {
     public float speed;
     private Vector3 direction = Vector3.left;
 
+    public delegate void PlayerDeath();
+    public static event PlayerDeath onDeath;
+
     void OnCollisionEnter2D(Collision2D coll)
     {
         Debug.Log("moi kollasin");
+        onDeath();
     }
 
 	// Use this for initialization
