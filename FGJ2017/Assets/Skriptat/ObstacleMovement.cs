@@ -12,7 +12,7 @@ public class ObstacleMovement : MonoBehaviour {
     void OnCollisionEnter2D(Collision2D coll)
     {
         Debug.Log("moi kollasin"+ coll.gameObject.name);
-
+        
         if(coll.gameObject.name.Contains("Destroyer"))
         {
             Destroy(this.gameObject);
