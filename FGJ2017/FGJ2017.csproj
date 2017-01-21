@@ -81,11 +81,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Skriptat\DayNightChange.cs" />
     <Compile Include="Assets\Skriptat\Destroyer.cs" />
     <Compile Include="Assets\Skriptat\GameState.cs" />
     <Compile Include="Assets\Skriptat\GeneratorBehaviour.cs" />
     <Compile Include="Assets\Skriptat\GroundMovement.cs" />
     <Compile Include="Assets\Skriptat\ObstacleMovement.cs" />
+    <Compile Include="Assets\Skriptat\PlayerMove.cs" />
     <Compile Include="Assets\Skriptat\ScoreKeeper.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
