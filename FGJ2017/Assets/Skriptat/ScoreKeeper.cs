@@ -10,6 +10,7 @@ public class ScoreKeeper : MonoBehaviour {
     
     void ResetScoreKeeper()
     {
+        RunEndScore.SetScore(score);
         score = 0;
     }
 

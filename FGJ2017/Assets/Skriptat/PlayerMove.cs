@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMove : MonoBehaviour {
-
+    public AudioSource jumpSound;
+    public AudioSource endSound;
     public float speed;
     private bool crouch;
     private Vector3 direction = Vector3.right;
@@ -18,10 +19,23 @@ public class PlayerMove : MonoBehaviour {
         isGrounded = true;
     }
 
+    void DeathSound()
+    {
+        this.GetComponent<Rigidbody2D>().AddForceAtPosition(new Vector2(Random.value * 300.0f, Random.value * 300.0f), new Vector2(transform.position.x + Random.value / 2.0f, transform.position.y - Random.value / 2.0f));
+        endSound.Play();
+    }
+
+    void ResetPlayer()
+    {
+        this.gameObject.transform.rotation = Quaternion.identity;
+    }
+
 	// Use this for initialization
 	void Start () {
-
+        GameState.startGame += ResetPlayer;
+        jumpSound.enabled = true;
         anim = GetComponent<Animator>();
+        ObstacleMovement.onDeath += DeathSound;
     }
 
     void FixedUpdate()
@@ -53,6 +67,7 @@ public class PlayerMove : MonoBehaviour {
         if(isGrounded) { 
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                jumpSound.Play();
                 isGrounded = false;
                 this.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 350);
             }

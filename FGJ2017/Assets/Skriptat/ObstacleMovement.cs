@@ -18,6 +18,7 @@ public class ObstacleMovement : MonoBehaviour {
             Destroy(this.gameObject);
         } else { 
             onDeath();
+            Destroy(this.gameObject);
         }
     }
 
