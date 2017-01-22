@@ -35,7 +35,7 @@ public class GeneratorBehaviour : MonoBehaviour {
         switch (currentLevel)
         {
             case Levels.Ground:
-                Instantiate(groundObstacle, this.transform.position, Quaternion.identity);
+                Instantiate(groundObstacle, this.transform.position + (Vector3.down * 0.5f), Quaternion.identity);
                 break;
             case Levels.Air:
                 Instantiate(airObstacle, this.transform.position + (Vector3.up * 1.5f), Quaternion.identity);
